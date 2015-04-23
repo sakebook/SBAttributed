@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 sakebook. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for SBAttributed.
 FOUNDATION_EXPORT double SBAttributedVersionNumber;

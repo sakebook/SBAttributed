@@ -8,5 +8,12 @@
 
 import Foundation
 
-final class SBAttributed: NSObject {
+public class SBAttributed {
+    
+    public init() {
+    }
+    
+    public func demo() {
+        println("demo")
+    }
 }

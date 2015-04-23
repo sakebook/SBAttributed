@@ -13,6 +13,7 @@
 		5055A1281AE8B15E007FBECE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5055A1271AE8B15E007FBECE /* Images.xcassets */; };
 		5055A12B1AE8B15E007FBECE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5055A1291AE8B15E007FBECE /* LaunchScreen.xib */; };
 		5055A1371AE8B15E007FBECE /* SBAttributedDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5055A1361AE8B15E007FBECE /* SBAttributedDemoTests.swift */; };
+		5055A14C1AE8C5D8007FBECE /* SBAttributed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5055A14B1AE8C5D8007FBECE /* SBAttributed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5055A1441AE8B31C007FBECE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5055A11B1AE8B15E007FBECE /* SBAttributedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBAttributedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5055A11F1AE8B15E007FBECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +50,7 @@
 		5055A1301AE8B15E007FBECE /* SBAttributedDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBAttributedDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5055A1351AE8B15E007FBECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5055A1361AE8B15E007FBECE /* SBAttributedDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBAttributedDemoTests.swift; sourceTree = "<group>"; };
+		5055A14B1AE8C5D8007FBECE /* SBAttributed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SBAttributed.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SBAttributed-eowqfdymbgqxukgtbrpkoewfditl/Build/Products/Debug-iphoneos/SBAttributed.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5055A14C1AE8C5D8007FBECE /* SBAttributed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,7 @@
 		5055A1121AE8B15E007FBECE = {
 			isa = PBXGroup;
 			children = (
+				5055A14B1AE8C5D8007FBECE /* SBAttributed.framework */,
 				5055A11D1AE8B15E007FBECE /* SBAttributedDemo */,
 				5055A1331AE8B15E007FBECE /* SBAttributedDemoTests */,
 				5055A11C1AE8B15E007FBECE /* Products */,
@@ -122,6 +139,7 @@
 				5055A1171AE8B15E007FBECE /* Sources */,
 				5055A1181AE8B15E007FBECE /* Frameworks */,
 				5055A1191AE8B15E007FBECE /* Resources */,
+				5055A1441AE8B31C007FBECE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SBAttributed-eowqfdymbgqxukgtbrpkoewfditl/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = SBAttributedDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +372,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/SBAttributed-eowqfdymbgqxukgtbrpkoewfditl/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = SBAttributedDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
