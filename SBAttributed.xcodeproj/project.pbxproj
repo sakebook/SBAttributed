@@ -10,6 +10,7 @@
 		5055A0FA1AE8AAE0007FBECE /* SBAttributed.h in Headers */ = {isa = PBXBuildFile; fileRef = 5055A0F91AE8AAE0007FBECE /* SBAttributed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5055A1001AE8AAE0007FBECE /* SBAttributed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5055A0F41AE8AAE0007FBECE /* SBAttributed.framework */; };
 		5055A1071AE8AAE0007FBECE /* SBAttributedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5055A1061AE8AAE0007FBECE /* SBAttributedTests.swift */; };
+		5055A1111AE8AE3E007FBECE /* SBAttributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5055A1101AE8AE3E007FBECE /* SBAttributed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		5055A0FF1AE8AAE0007FBECE /* SBAttributedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBAttributedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5055A1051AE8AAE0007FBECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5055A1061AE8AAE0007FBECE /* SBAttributedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBAttributedTests.swift; sourceTree = "<group>"; };
+		5055A1101AE8AE3E007FBECE /* SBAttributed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBAttributed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				5055A0F91AE8AAE0007FBECE /* SBAttributed.h */,
 				5055A0F71AE8AAE0007FBECE /* Supporting Files */,
+				5055A1101AE8AE3E007FBECE /* SBAttributed.swift */,
 			);
 			path = SBAttributed;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5055A1111AE8AE3E007FBECE /* SBAttributed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 		5055A10B1AE8AAE0007FBECE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +337,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5055A10C1AE8AAE0007FBECE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
